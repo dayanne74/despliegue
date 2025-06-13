@@ -1,0 +1,100 @@
+###
+
+POST http://localhost:5000/api/actividad HTTP/1.1
+Content-Type: application/json
+
+  
+  [
+  {
+    "nombre": "Bus Nerkwork",
+    "capacidad": 40,
+    "descripcion": "Bus con asientos reclinables y aire acondicionado para viajes largos.",
+    "comodidades": ["Baño"],
+    "placa": "ZYX-9876",
+    "categoria": "Bus XL"
+  },
+  {
+    "nombre": "Expreso Andino",
+    "capacidad": 44,
+    "descripcion": "Bus ejecutivo con Wi-Fi, aire acondicionado y cargadores USB.",
+    "comodidades": ["Baño", "Wi-Fi", "Cargadores USB"],
+    "placa": "ABC-1234",
+    "categoria": "Bus XL"
+  },
+  {
+    "nombre": "Cóndor Real",
+    "capacidad": 42,
+    "descripcion": "Vehículo moderno ideal para turismo nacional con ventanas panorámicas.",
+    "comodidades": ["Baño", "Pantallas Individuales"],
+    "placa": "DEF-5678",
+    "categoria": "Bus XL"
+  },
+  {
+    "nombre": "Atlántico Tours",
+    "capacidad": 45,
+    "descripcion": "Bus de dos niveles con sistema de entretenimiento y refrigerio a bordo.",
+    "comodidades": ["Baño", "Aire Acondicionado", "TV"],
+    "placa": "GHI-9012",
+    "categoria": "Bus XL"
+  },
+  {
+    "nombre": "Viaje Total",
+    "capacidad": 40,
+    "descripcion": "Bus climatizado con asientos ergonómicos y espacio para equipaje amplio.",
+    "comodidades": ["Baño", "Aire Acondicionado"],
+    "placa": "JKL-3456",
+    "categoria": "Bus XL"
+  },
+  {
+    "nombre": "Suramérica Confort",
+    "capacidad": 43,
+    "descripcion": "Ideal para excursiones largas con sonido envolvente y luz LED ambiental.",
+    "comodidades": ["Baño", "Wi-Fi", "Luz Ambiental"],
+    "placa": "MNO-7890",
+    "categoria": "Bus XL"
+  },
+  {
+    "nombre": "Ruta Dorada",
+    "capacidad": 41,
+    "descripcion": "Bus turístico de lujo con refrigerios incluidos y atención personalizada.",
+    "comodidades": ["Baño", "Aire Acondicionado", "Refrigerio"],
+    "placa": "PQR-1122",
+    "categoria": "Bus XL"
+  },
+  {
+    "nombre": "Colombus Max",
+    "capacidad": 46,
+    "descripcion": "Vehículo equipado para viajes ejecutivos con compartimentos individuales.",
+    "comodidades": ["Baño", "USB", "TV", "Aire Acondicionado"],
+    "placa": "STU-3344",
+    "categoria": "Bus XL"
+  },
+  {
+    "nombre": "TransCordillera",
+    "capacidad": 42,
+    "descripcion": "Bus interdepartamental con cortinas, aire y asientos tipo cama.",
+    "comodidades": ["Baño", "Asientos Cama"],
+    "placa": "VWX-5566",
+    "categoria": "Bus XL"
+  },
+  {
+    "nombre": "Tour Nacional",
+    "capacidad": 40,
+    "descripcion": "Bus climatizado con sistema de sonido envolvente y amplio maletero.",
+    "comodidades": ["Baño", "Maletero Amplio"],
+    "placa": "YZA-7788",
+    "categoria": "Bus XL"
+  }
+]
+
+###
+
+GET http://localhost:5000/api/actividad HTTP/1.1
+
+###
+
+GET http://localhost:5000/api/actividad/67586a3f17c99cb8a3afed4b HTTP/1.1
+
+###
+
+DELETE http://localhost:5000/api/actividad/67586a3f17c99cb8a3afed4b HTTP/1.1

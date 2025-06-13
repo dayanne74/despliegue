@@ -1,0 +1,24 @@
+###
+
+POST http://localhost:5000/api/comida HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4NGEwMjZkNTc3OTJhNDZhYzlkODQxZCIsIm5vbWJyZSI6ImVkd2luIiwiYXBlbGxpZG8iOiJtYXJpbiIsInJvbGVzIjpbImFkbWluaXN0cmFkb3IiXSwiaWF0IjoxNzQ5NjgwODAzLCJleHAiOjE3NDk3MjQwMDN9.Wmz2TFWkwYW5PuKM8ft1d8iSLrbklGmhMriULaB8ScI
+
+ {
+    "nombre": "Langostinos al ajillo",
+    "descripcion": "Langostinos cocinados en mantequilla, ajo y perejil fresco.",
+    "precio": "35000",
+    "categoria": "Mar"
+  }
+###
+
+GET http://localhost:5000/api/comida HTTP/1.1
+
+###
+
+GET http://localhost:5000/api/comida/67586a3f17c99cb8a3afed4b HTTP/1.1
+
+###
+
+DELETE http://localhost:5000/api/comida/67586a3f17c99cb8a3afed4b HTTP/1.1
+
